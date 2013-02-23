@@ -40,7 +40,7 @@ sonar {
     testReportPath = file("$buildDir/test-results")
   }
 }
-
+/*
 test << {
   ant.taskdef(
     name: 'scalatest', 
@@ -53,4 +53,4 @@ test << {
     fork: 'false') {
     reporter(type: 'stderr')
   }
-}
+}*/
