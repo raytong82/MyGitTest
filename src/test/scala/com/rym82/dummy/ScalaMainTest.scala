@@ -9,6 +9,5 @@ class ScalaMainTest {
     assert (5 == main.sum (2, 3))
     assert (7 == main.sum (3, 4))
     assert (9 == main.sum (4, 5))
-    assert (11 == main.sum (5, 6))
   }
 }
