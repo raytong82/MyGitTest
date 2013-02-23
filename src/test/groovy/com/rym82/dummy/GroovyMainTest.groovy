@@ -7,5 +7,6 @@ class GroovyMainTest {
     void shouldSum() {
         def main = new GroovyMain()
         assert 3 == main.sum(1, 2)
+        assert 4 == main.sum(1, 3)
     }
 }
