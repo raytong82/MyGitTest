@@ -21,31 +21,31 @@ class ExampleSpec extends FeatureSpec with GivenWhenThen with BeforeAndAfter {
 
     scenario("pop is invoked on a non-empty stack") {
  
-      given("a non-empty stack")
+      Given("a non-empty stack")
       stack.push(1)
       stack.push(2)
       val oldSize = stack.size
  
-      when("when pop is invoked on the stack")
+      When("when pop is invoked on the stack")
       val result = stack.pop()
  
-      then("the most recently pushed element should be returned")
+      Then("the most recently pushed element should be returned")
       assert(result === 2)
  
-      and("the stack should have one less item than before")
+      And("the stack should have one less item than before")
       assert(stack.size === oldSize - 1)
     }
  
     scenario("pop is invoked on an empty stack") {
  
-      given("an empty stack")
-      when("when pop is invoked on the stack")
-      then("NoSuchElementException should be thrown")
+      Given("an empty stack")
+      When("when pop is invoked on the stack")
+      Then("NoSuchElementException should be thrown")
       intercept[NoSuchElementException] {
         stack.pop()
       }
  
-      and("the stack should still be empty")
+      And("the stack should still be empty")
       assert(stack.isEmpty)
     }
   }
