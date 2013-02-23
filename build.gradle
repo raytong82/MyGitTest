@@ -12,3 +12,17 @@ dependencies {
   testCompile group: 'junit', name: 'junit', version: '4.+'
   testCompile group: 'org.scalatest', name: 'scalatest_2.9.2', version: '1.9.1'
 }
+
+test << {
+  ant.taskdef(
+    name: 'scalatest', 
+    classname: 'org.scalatest.tools.ScalaTestAntTask', 
+    classpath: classpath.asPath
+  )
+  ant.scalatest(
+    runpath: testClassesDir, 
+    haltonfailure: 'true', 
+    fork: 'false') {
+    reporter(type: 'stderr')
+  }
+}
