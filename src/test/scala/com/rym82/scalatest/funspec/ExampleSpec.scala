@@ -3,7 +3,10 @@ package com.rym82.scalatest.funspec
 import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfter
 import scala.collection.mutable.Stack
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
 
+@RunWith(classOf[JUnitRunner])
 class ExampleSpec extends FunSpec with BeforeAndAfter {
 
   var stack: Stack[Int] = _

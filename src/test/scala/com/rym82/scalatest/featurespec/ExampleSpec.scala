@@ -4,7 +4,10 @@ import org.scalatest.FeatureSpec
 import org.scalatest.GivenWhenThen
 import org.scalatest.BeforeAndAfter
 import scala.collection.mutable.Stack
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
 
+@RunWith(classOf[JUnitRunner])
 class ExampleSpec extends FeatureSpec with GivenWhenThen with BeforeAndAfter {
 
   var stack: Stack[Int] = _
