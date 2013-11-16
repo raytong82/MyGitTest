@@ -33,7 +33,7 @@ cobertura {
                   sourceSets.main.scala.srcDirs]
 }
 
-sonar {
+/*sonar {
   server {
     url = "http://localhost:9000"
   }
@@ -48,7 +48,7 @@ sonar {
     coberturaReportPath = file("$buildDir/reports/cobertura/cobertura.xml")
     testReportPath = file("$buildDir/test-results")
   }
-}
+}*/
 
 task dummy {
   println sourceSets.main.java.srcDirs
