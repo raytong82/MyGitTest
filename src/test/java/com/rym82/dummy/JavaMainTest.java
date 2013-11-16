@@ -1,6 +1,8 @@
 package com.rym82.dummy;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -26,5 +28,17 @@ public class JavaMainTest {
     public void shouldSum() {
         final JavaMain main = new JavaMain();
         assertEquals(3, main.sum(1, 2));
+    }
+
+    @Test
+    public void shouldReturnPositive() {
+        final JavaMain main = new JavaMain();
+        assertTrue(main.isPositive(1));
+    }
+
+    @Test
+    public void shouldReturnNonPositive() {
+        final JavaMain main = new JavaMain();
+        assertFalse(main.isPositive(-1));
     }
 }

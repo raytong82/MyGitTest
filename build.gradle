@@ -4,6 +4,9 @@ apply plugin: 'scala'
 apply plugin: 'sonar'
 apply plugin: 'cobertura'
 
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
 repositories {
     mavenCentral()
 }
@@ -24,6 +27,12 @@ buildscript {
   }
 }
 
+cobertura {
+  coverageDirs = [sourceSets.main.java.srcDirs,
+                  sourceSets.main.groovy.srcDirs,
+                  sourceSets.main.scala.srcDirs]
+}
+
 sonar {
   server {
     url = "http://localhost:9000"
@@ -39,6 +48,12 @@ sonar {
     coberturaReportPath = file("$buildDir/reports/cobertura/cobertura.xml")
     testReportPath = file("$buildDir/test-results")
   }
+}
+
+task dummy {
+  println sourceSets.main.java.srcDirs
+  println sourceSets.main.groovy.srcDirs
+  println sourceSets.main.scala.srcDirs
 }
 /*
 test << {
