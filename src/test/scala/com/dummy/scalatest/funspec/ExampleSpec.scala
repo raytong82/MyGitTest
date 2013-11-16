@@ -1,4 +1,4 @@
-package com.rym82.scalatest.funspec
+package com.dummy.scalatest.funspec
 
 import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfter

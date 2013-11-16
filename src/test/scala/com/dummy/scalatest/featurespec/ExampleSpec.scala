@@ -1,4 +1,4 @@
-package com.rym82.scalatest.featurespec
+package com.dummy.scalatest.featurespec
 
 import org.scalatest.FeatureSpec
 import org.scalatest.GivenWhenThen

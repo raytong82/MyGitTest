@@ -1,6 +1,8 @@
-package com.rym82.dummy;
+package com.dummy;
 
 import org.junit.Test;
+
+import com.dummy.GroovyMain;
 
 class GroovyMainTest {
     @Test

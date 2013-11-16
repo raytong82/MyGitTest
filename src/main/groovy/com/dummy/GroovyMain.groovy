@@ -1,4 +1,4 @@
-package com.rym82.dummy
+package com.dummy
 
 class GroovyMain {
     def sum = { x, y ->

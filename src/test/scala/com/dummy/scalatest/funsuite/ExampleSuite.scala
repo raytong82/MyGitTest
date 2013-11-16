@@ -1,4 +1,4 @@
-package com.rym82.scalatest.funsuite
+package com.dummy.scalatest.funsuite
 
 import org.scalatest.FunSuite
 import org.scalatest.BeforeAndAfter

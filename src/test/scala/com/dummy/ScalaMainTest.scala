@@ -1,5 +1,6 @@
-package com.rym82.dummy
+package com.dummy
 import org.junit.Test
+
 
 class ScalaMainTest {
   @Test
