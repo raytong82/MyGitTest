@@ -5,4 +5,4 @@ MyGitTest
 
 Dummy message here
 
-updated 5
+updated 6
