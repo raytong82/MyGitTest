@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'scala'
 apply plugin: 'sonar'
-apply plugin: 'cobertura'
+//apply plugin: 'cobertura'
 
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
@@ -27,11 +27,11 @@ buildscript {
   }
 }
 
-cobertura {
+/*cobertura {
   coverageDirs = [sourceSets.main.java.srcDirs,
                   sourceSets.main.groovy.srcDirs,
                   sourceSets.main.scala.srcDirs]
-}
+}*/
 
 /*sonar {
   server {
